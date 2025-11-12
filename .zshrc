@@ -96,9 +96,6 @@ alias q='clear'
 # go to repos folder (symlink)
 alias repos='cd ~/repos'
 
-# open .zshrc in VS Code
-alias startup='code ~/.zshrc'
-
 # go to Windows user directory (symlink)
 alias windows='cd ~/windows'
 
@@ -118,7 +115,6 @@ echo "open .......... - open a file in default app from CLI" && \
 echo "pp ............ - poetry run python" && \
 echo "q ............. - clear terminal" && \
 echo "repos ......... - go to repos folder" && \
-echo "startup ....... - open .zshrc in vim"
 echo "windows ....... - go to Windows user directory"'
 
 
