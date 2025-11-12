@@ -50,7 +50,6 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
 # Use Vim as default text editor
 export EDITOR=vim
 
@@ -88,37 +87,45 @@ alias ll='ls -alFh'
 # open a file in default app from CLI
 alias open="wslview"
 
-# poetry python
+# poetry run python
 alias pp='poetry run python'
 
 # clear terminal
 alias q='clear'
 
-# go to repos folder
+# go to repos folder (symlink)
 alias repos='cd ~/repos'
 
-# open this file in vim 
-alias startup='vim ~/.zshrc'
+# open .zshrc in VS Code
+alias startup='code ~/.zshrc'
 
 # go to Windows user directory (symlink)
 alias windows='cd ~/windows'
 
 ########################################
 
-#help alias in alphabetical order
-alias help='echo "downloads ... - go to Downloads directory" && \
-echo "e ........... - close terminal" && \
-echo "folder ...... - open current directory in Windows Explorer" && \
-echo "gg .......... - get git status" && \
-echo "l ........... - list all files in directory" && \
-echo "la .......... - list all files in directory including hidden files" && \
-echo "ldir ........ - list directories including hidden ones" && \
-echo "lf .......... - list detailed info on files only in directory" && \
-echo "ll .......... - list detailed info on all files and directories including hidden" && \
-echo "open ........ - open a file in default app from CLI" && \
-echo "pp .......... - run poetry python" && \
-echo "q ........... - clear terminal" && \
-echo "repos ....... - go to repos folder" && \
-echo "startup ..... - open .zshrc in vim"
-echo "windows ..... - go to Windows user directory"'
+# help alias in alphabetical order
+alias help='echo "downloads ..... - go to Downloads directory" && \
+echo "e ............. - close terminal" && \
+echo "folder ........ - open current directory in Windows Explorer" && \
+echo "gg ............ - get git status" && \
+echo "l ............. - list all files in directory" && \
+echo "la ............ - list all files in directory including hidden files" && \
+echo "ldir .......... - list directories including hidden ones" && \
+echo "lf ............ - list detailed info on files only in directory" && \
+echo "ll ............ - list detailed info on all files and directories including hidden" && \
+echo "open .......... - open a file in default app from CLI" && \
+echo "pp ............ - poetry run python" && \
+echo "q ............. - clear terminal" && \
+echo "repos ......... - go to repos folder" && \
+echo "startup ....... - open .zshrc in vim"
+echo "windows ....... - go to Windows user directory"'
 
+
+########################################
+
+# Store private settings in a file called .zshrc.local
+
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
