@@ -1,0 +1,84 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Delete Line
+  {
+    "key": "ctrl+d ctrl+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus"
+  },
+
+  // Create/Toggle Bookmark
+  {
+    "key": "ctrl+b ctrl+b",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+
+  // Previous Bookmark
+  {
+    "key": "ctrl+b ctrl+n",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
+  },
+
+  // Next Bookmark
+  {
+    "key": "ctrl+b ctrl+m",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+
+  // Go to Line
+  {
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.action.gotoLine",
+    "when": "editorTextFocus"
+  },
+
+  // Go to Top of File
+  {
+    "key": "ctrl+h ctrl+h",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+
+  // Go to Bottom of File
+  {
+    "key": "ctrl+n ctrl+n",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+
+  // Format Document
+  {
+    "key": "ctrl+k ctrl+k",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+
+  // Save without formatting
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
+  
+  // Open Folder
+  {
+    "key": "ctrl+o ctrl+o",
+    "command": "workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+
+  // Close Workspace
+  {
+    "key": "ctrl+q ctrl+q",
+    "command": "workbench.action.closeFolder",
+    "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+  },
+
+  // Connect to WSL
+  {
+    "key": "ctrl+w ctrl+w",
+    "command": "remote-wsl.connect"
+  }
+]
