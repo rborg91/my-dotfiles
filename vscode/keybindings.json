@@ -80,5 +80,14 @@
   {
     "key": "ctrl+w ctrl+w",
     "command": "remote-wsl.connect"
-  }
+  },
+
+  // Refresh file
+  // This is because I found that the file sometimes does not pick up on changes in real time
+  // e.g. git commiting a file, and the file still shows that changes have been uncommited
+  // NOTE: This also removes unsaved changes
+    {
+    "key": "ctrl+r ctrl+r",
+    "command": "workbench.action.files.revert",
+  },
 ]
