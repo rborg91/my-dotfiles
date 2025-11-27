@@ -96,6 +96,9 @@ alias q='clear'
 # go to repos folder (symlink)
 alias repos='cd ~/repos'
 
+# Echo shebang
+alias shebang='echo #!/bin/bash'
+
 # go to Windows user directory (symlink)
 alias windows='cd ~/windows'
 
@@ -115,6 +118,7 @@ echo "open .......... - open a file in default app from CLI" && \
 echo "pp ............ - poetry run python" && \
 echo "q ............. - clear terminal" && \
 echo "repos ......... - go to repos folder" && \
+echo "shebang ....... - echo shebang" && \
 echo "windows ....... - go to Windows user directory"'
 
 
