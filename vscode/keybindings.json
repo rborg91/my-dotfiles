@@ -28,6 +28,20 @@
     "when": "editorTextFocus"
   },
 
+  // Previous Change
+  {
+    "key": "ctrl+g ctrl+n",
+    "command": "editor.action.dirtydiff.previous",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+
+  // Next Change
+  {
+    "key": "ctrl+g ctrl+m",
+    "command": "editor.action.dirtydiff.next",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+
   // Go to Line
   {
     "key": "ctrl+g ctrl+g",
@@ -69,6 +83,13 @@
     "when": "openFolderWorkspaceSupport"
   },
 
+  // Open File
+  {
+    "key": "ctrl+o ctrl+f",
+    "command": "workbench.action.files.openFile",
+    "when": "true"
+  },
+
   // Close Workspace
   {
     "key": "ctrl+q ctrl+q",
@@ -89,5 +110,5 @@
     {
     "key": "ctrl+r ctrl+r",
     "command": "workbench.action.files.revert",
-  },
+  }
 ]
