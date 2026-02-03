@@ -105,11 +105,11 @@ alias windows='cd ~/windows'
 ########################################
 
 # help alias in alphabetical order
-alias help='echo "downloads ..... - go to Downloads directory" && \
+alias myhelp='echo "downloads ..... - go to Downloads directory" && \
 echo "e ............. - close terminal" && \
 echo "folder ........ - open current directory in Windows Explorer" && \
 echo "gg ............ - get git status" && \
-echo "help........... - show this list of aliases" && \
+echo "myhelp......... - show this list of aliases" && \
 echo "l ............. - list all files in directory" && \
 echo "la ............ - list all files in directory including hidden files" && \
 echo "ldir .......... - list directories including hidden ones" && \
